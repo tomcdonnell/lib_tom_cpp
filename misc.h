@@ -76,7 +76,10 @@ namespace TomsLibMisc
  /*
   * Print an error message than exit with code EXIT_FAILURE.
   */
- inline void error(char *msg) {std::cerr << "ERROR: " << msg << std::endl; exit(EXIT_FAILURE);}
+ inline void error(const std::string msg)
+ {
+    std::cerr << "ERROR: " << msg << std::endl; exit(EXIT_FAILURE);
+ }
 
  /*
   * Return a random integer in the range [l, h].

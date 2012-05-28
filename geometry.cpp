@@ -8,8 +8,8 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 
-#include <TomsLibrary/geometry.h>
-#include <TomsLibrary/misc.h>
+#include "geometry.h"
+#include "misc.h"
 
 #include <assert.h>
 

@@ -12,10 +12,10 @@
 
 // INCLUDES ///////////////////////////////////////////////////////////////////////////////////////
 
-#include <TomsLibrary/misc.h>
+#include "misc.h"
 
 #include <math.h>
-#include <iostream.h>
+#include <iostream>
 
 // GLOBAL VARIABLES ///////////////////////////////////////////////////////////////////////////////
 
@@ -379,25 +379,25 @@ namespace TomsLibVector
  }
 
  // functions to aid debugging
- inline ostream &operator<<(ostream &output, rec2vector const &v)
+ inline std::ostream &operator<<(std::ostream &output, rec2vector const &v)
  {
     output << "(" << v.x << ", " << v.y << ")";
     return output;
  }
 
- inline ostream &operator<<(ostream &output, pol2vector &v)
+ inline std::ostream &operator<<(std::ostream &output, pol2vector &v)
  {
     output << "(" << v.getR() << ", " << v.getAngle() * (180.0 / pi) << ")";
     return output;
  }
 
- inline ostream &operator<<(ostream &output, rec3vector const &v)
+ inline std::ostream &operator<<(std::ostream &output, rec3vector const &v)
  {
     output << "(" << v.x << ", " << v.y << ", " << v.z << ")";
     return output;
  }
 
- inline ostream &operator<<(ostream &output, pol3vector &v)
+ inline std::ostream &operator<<(std::ostream &output, pol3vector &v)
  {
     output << "(" << v.getR() << ", " << v.getAXZ() * (180.0 / pi) 
                               << ", " << v.getAY()  * (180.0 / pi) << ")";
